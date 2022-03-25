@@ -3,6 +3,7 @@
   <id type="desktop">io.github.shiiion.primehack</id>
   <name>PrimeHack</name>
   <summary>Dolphin Emu fork for various Metroid Prime mods</summary>
+  <developer_name>Shiiion, SirMangler</developer_name>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
   <content_rating type="oars-1.0" />
