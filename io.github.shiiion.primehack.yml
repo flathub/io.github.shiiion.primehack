@@ -109,7 +109,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/shiiion/dolphin.git
-        commit: 65359e10a964d6b6a75bcfe5fab77c38c7e15eac
+        commit: a31962eeccd11e2bbfe57800330126612713b097
       # detects whether dolphin is running in a flatpak sandbox
       # and makes it use xdg directories if it is.
       # prevents dolphin from attempting to write conf files
