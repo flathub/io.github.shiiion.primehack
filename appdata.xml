@@ -18,7 +18,7 @@
     <id>io.github.shiiion.primehack.desktop</id>
   </provides>
   <releases>
-    <release date="2022-09-24" version="1.0.6a"/>
+    <release date="2022-09-26" version="1.0.6a"/>
   </releases>
   <url type="homepage">https://github.com/shiiion/dolphin</url>
   <url type="help">https://github.com/shiiion/dolphin/wiki</url>
