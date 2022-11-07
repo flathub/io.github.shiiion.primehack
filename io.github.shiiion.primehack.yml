@@ -2,10 +2,10 @@ app-id: io.github.shiiion.primehack
 runtime: org.kde.Platform
 runtime-version: 5.15-21.08
 sdk: org.kde.Sdk
-command: dolphin-emu-wrapper
-rename-desktop-file: dolphin-emu.desktop
+command: primehack-wrapper
+rename-desktop-file: primehack.desktop
 rename-icon: dolphin-emu
-rename-appdata-file: dolphin-emu.appdata.xml
+rename-appdata-file: primehack.appdata.xml
 finish-args:
   - --device=all
   # the file picker uses portals but the set
@@ -102,10 +102,12 @@ modules:
     cleanup:
       - /share/man
     post-install:
-      - install -D dolphin-emu-wrapper /app/bin/dolphin-emu-wrapper
-      - install -Dm644 appdata.xml /app/share/appdata/dolphin-emu.appdata.xml
-      - sed -i -e 's/"2048"/"512"/g' /app/share/icons/hicolor/scalable/apps/dolphin-emu.svg
-      - desktop-file-edit --set-key=Exec --set-value='dolphin-emu-wrapper' /app/share/applications/dolphin-emu.desktop
+      - install -D primehack-wrapper /app/bin/primehack-wrapper
+      - install -Dm644 appdata.xml /app/share/appdata/primehack.appdata.xml
+      - rm /app/share/icons/hicolor/scalable/apps/dolphin-emu.svg
+      - mv /app/share/applications/dolphin-emu.desktop /app/share/applications/primehack.desktop
+      - desktop-file-edit --set-key=Exec --set-value='primehack-wrapper' /app/share/applications/primehack.desktop
+      - desktop-file-edit --set-key=Name --set-value='PrimeHack' /app/share/applications/primehack.desktop
     sources:
       - type: git
         url: https://github.com/shiiion/dolphin.git
@@ -128,4 +130,4 @@ modules:
           - test -S $XDG_RUNTIME_DIR/discord-ipc-$i || ln -sf {app/com.discordapp.Discord,$XDG_RUNTIME_DIR}/discord-ipc-$i;
           - done
           - dolphin-emu "$@"
-        dest-filename: dolphin-emu-wrapper
+        dest-filename: primehack-wrapper
