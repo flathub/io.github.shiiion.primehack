@@ -1,6 +1,6 @@
 app-id: io.github.shiiion.primehack
 runtime: org.kde.Platform
-runtime-version: '6.5'
+runtime-version: '6.6'
 sdk: org.kde.Sdk
 command: primehack-wrapper
 rename-desktop-file: primehack.desktop
@@ -84,7 +84,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/shiiion/dolphin.git
-        commit: efb99ebfd20b1bc16ea3e51fec409c91e354d8c2
+        commit: bd2591a28ab4a367a3f11f65059e07314a13f081 
       # detects whether dolphin is running in a flatpak sandbox
       # and makes it use xdg directories if it is.
       # prevents dolphin from attempting to write conf files
