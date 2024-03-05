@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application>
-  <id type="desktop">io.github.shiiion.primehack</id>
+<component type="desktop-application">
+  <id>io.github.shiiion.primehack</id>
   <name>PrimeHack</name>
   <summary>Dolphin Emu fork for various Metroid Prime mods</summary>
   <developer_name>Shiiion, SirMangler</developer_name>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
-  <content_rating type="oars-1.0" />
+  <content_rating type="oars-1.1" />
   <description><p>PrimeHack is a fork of Dolphin Emulator to bring modern Mouse and Keyboard controls, as well as Dual-Stick gamepad controls to the Metroid Prime Trilogy. PrimeHack also offers many other features such as increased FoV and various new cheats.</p></description>
   <screenshots>
-    <screenshot type="default">https://raw.githubusercontent.com/flathub/io.github.shiiion.primehack/master/screenshots/1.png</screenshot>
-    <screenshot>https://raw.githubusercontent.com/flathub/io.github.shiiion.primehack/master/screenshots/2.png</screenshot>
-    <screenshot>https://raw.githubusercontent.com/flathub/io.github.shiiion.primehack/master/screenshots/3.png</screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/flathub/io.github.shiiion.primehack/master/screenshots/1.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/flathub/io.github.shiiion.primehack/master/screenshots/2.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/flathub/io.github.shiiion.primehack/master/screenshots/3.png</image>
+    </screenshot>
   </screenshots>
   <provides>
     <binary>dolphin-emu</binary>
     <id>io.github.shiiion.primehack.desktop</id>
   </provides>
+  <launchable type="desktop-id">io.github.shiiion.primehack.desktop</launchable>
   <releases>
     <release date="2023-12-20" version="1.0.7"/>
   </releases>
@@ -24,4 +31,4 @@
   <url type="help">https://github.com/shiiion/dolphin/wiki</url>
   <url type="faq">https://github.com/shiiion/dolphin/wiki/Frequently-Asked-Questions</url>
   <url type="bugtracker">https://github.com/shiiion/dolphin/issues</url>
-</application>
+</component>
