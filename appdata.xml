@@ -25,7 +25,7 @@
   </provides>
   <launchable type="desktop-id">io.github.shiiion.primehack.desktop</launchable>
   <releases>
-    <release date="2023-12-20" version="1.0.7"/>
+    <release date="2023-12-28" version="1.0.7a"/>
   </releases>
   <url type="homepage">https://github.com/shiiion/dolphin</url>
   <url type="help">https://github.com/shiiion/dolphin/wiki</url>
