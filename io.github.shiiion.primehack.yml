@@ -22,15 +22,16 @@ finish-args:
   - --talk-name=org.freedesktop.ScreenSaver
   # required for Gamescope on Steam Deck
   - --filesystem=xdg-run/gamescope-0:ro
+cleanup:
+  - /include
+  - /lib/pkgconfig
+  - /share/man
+  - '*.la'
 modules:
   # needed for the bluetooth passthrough feature to work
   - name: libusb
     config-opts:
       - --disable-static
-    cleanup:
-      - /include
-      - /lib/*.la
-      - /lib/pkgconfig
     sources:
       - type: archive
         url: https://github.com/libusb/libusb/releases/download/v1.0.29/libusb-1.0.29.tar.bz2
@@ -75,8 +76,6 @@ modules:
       - -DENABLE_EVDEV=ON
       - -DDISTRIBUTOR=Flathub
       - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
-    cleanup:
-      - /share/man
     post-install:
       - install -D primehack-wrapper /app/bin/primehack-wrapper
       - install -Dm644 appdata.xml /app/share/appdata/primehack.appdata.xml
